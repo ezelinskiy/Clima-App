@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		86F146862B5F1450004ACF14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F146852B5F1450004ACF14 /* AppDelegate.swift */; };
 		86F146882B5F1450004ACF14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F146872B5F1450004ACF14 /* SceneDelegate.swift */; };
-		86F1468A2B5F1450004ACF14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F146892B5F1450004ACF14 /* ViewController.swift */; };
+		86F1468A2B5F1450004ACF14 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F146892B5F1450004ACF14 /* WeatherViewController.swift */; };
 		86F1468D2B5F1450004ACF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F1468B2B5F1450004ACF14 /* Main.storyboard */; };
 		86F1468F2B5F1452004ACF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F1468E2B5F1452004ACF14 /* Assets.xcassets */; };
 		86F146922B5F1452004ACF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F146902B5F1452004ACF14 /* LaunchScreen.storyboard */; };
+		86F146A22B5FCCB7004ACF14 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F146A12B5FCCB7004ACF14 /* WeatherManager.swift */; };
+		86F146A42B5FF59E004ACF14 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F146A32B5FF59E004ACF14 /* WeatherData.swift */; };
+		86F146A62B6000B4004ACF14 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F146A52B6000B4004ACF14 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86F146822B5F1450004ACF14 /* Clima-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clima-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F146852B5F1450004ACF14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86F146872B5F1450004ACF14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86F146892B5F1450004ACF14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86F146892B5F1450004ACF14 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		86F1468C2B5F1450004ACF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86F1468E2B5F1452004ACF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86F146912B5F1452004ACF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86F146932B5F1452004ACF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F146A12B5FCCB7004ACF14 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		86F146A32B5FF59E004ACF14 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		86F146A52B6000B4004ACF14 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		86F146842B5F1450004ACF14 /* Clima-App */ = {
 			isa = PBXGroup;
 			children = (
+				86F146A02B5FCC93004ACF14 /* Model */,
+				86F1469E2B5F1553004ACF14 /* View */,
+				86F1469F2B5F1573004ACF14 /* Controller */,
 				86F146852B5F1450004ACF14 /* AppDelegate.swift */,
 				86F146872B5F1450004ACF14 /* SceneDelegate.swift */,
-				86F146892B5F1450004ACF14 /* ViewController.swift */,
-				86F1468B2B5F1450004ACF14 /* Main.storyboard */,
 				86F1468E2B5F1452004ACF14 /* Assets.xcassets */,
 				86F146902B5F1452004ACF14 /* LaunchScreen.storyboard */,
 				86F146932B5F1452004ACF14 /* Info.plist */,
 			);
 			path = "Clima-App";
+			sourceTree = "<group>";
+		};
+		86F1469E2B5F1553004ACF14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86F1468B2B5F1450004ACF14 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86F1469F2B5F1573004ACF14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				86F146892B5F1450004ACF14 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		86F146A02B5FCC93004ACF14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86F146A12B5FCCB7004ACF14 /* WeatherManager.swift */,
+				86F146A32B5FF59E004ACF14 /* WeatherData.swift */,
+				86F146A52B6000B4004ACF14 /* WeatherModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F1468A2B5F1450004ACF14 /* ViewController.swift in Sources */,
+				86F1468A2B5F1450004ACF14 /* WeatherViewController.swift in Sources */,
+				86F146A42B5FF59E004ACF14 /* WeatherData.swift in Sources */,
 				86F146862B5F1450004ACF14 /* AppDelegate.swift in Sources */,
+				86F146A22B5FCCB7004ACF14 /* WeatherManager.swift in Sources */,
+				86F146A62B6000B4004ACF14 /* WeatherModel.swift in Sources */,
 				86F146882B5F1450004ACF14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,11 +331,13 @@
 				DEVELOPMENT_TEAM = NFTB3H74LP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Clima-App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Clima;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yeze.apps.Clima-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,11 +364,13 @@
 				DEVELOPMENT_TEAM = NFTB3H74LP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Clima-App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Clima;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +378,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yeze.apps.Clima-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
